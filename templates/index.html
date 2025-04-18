@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Shifra - Voice Assistant</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini_Jarvis, My Virtual Assistant</title>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/logo.jpg') }}" type="image/x-icon" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Shifra</h1>
-        <form method="POST" action="/listen">
-            <button type="submit">Start Listening</button>
-        </form>
-    </div>
+  <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="logo" id="logo" />
+  <h1>I'm <span id="name">Jarvis</span>, Your <span id="va">Virtual Assistant</span></h1>
+  <img src="{{ url_for('static', filename='images/voice.gif') }}" alt="voice" id="voice" />
+  
+  <button id="btn">
+    <img src="{{ url_for('static', filename='images/mic.svg') }}" alt="mic" />
+    <span id="content">Click here for talk to me</span>
+  </button>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  <script>
+    window.onload = function () {
+      wishMe();
+    };
+  </script>
 </body>
 </html>
