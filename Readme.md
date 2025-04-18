@@ -1,16 +1,19 @@
 
-# Shifra - Desktop Voice Assistant (with Web Integration) 🎙️💻
+# Jarvis - Desktop Voice Assistant (with Web Integration) 🎙️💻
 
-Shifra is a smart voice assistant built using **Flask (Python)** and **Vanilla JavaScript**. It responds to voice commands to open apps like **Calculator**, **Notepad**, **Chrome**, and also performs web searches or opens sites like **YouTube**, **Google**, **Facebook**, and more.
+**Jarvis** is a smart desktop voice assistant built using **Flask (Python)** and **Vanilla JavaScript**. It responds to voice commands to open system apps like **Calculator**, **Notepad**, **Chrome**, and also performs web searches or opens websites like **YouTube**, **Google**, and more — all from a sleek browser interface.
 
 ## 🚀 Features
 
 - ✅ Web-based voice recognition using JavaScript.
-- ✅ Real-time speech synthesis (Shifra speaks back).
-- ✅ Integration with Python (Flask) for system-level commands.
-- ✅ Opens desktop applications like Calculator, Notepad, Chrome, File Explorer, etc.
-- ✅ Can also open websites via voice commands.
-- ✅ Works seamlessly with a browser UI.
+- ✅ Real-time speech synthesis (Jarvis speaks back to you).
+- ✅ Python- and Flask-powered backend for executing system-level commands.
+- ✅ Opens popular Windows apps like Calculator, Notepad, Chrome, Word, Excel, PowerPoint, etc.
+- ✅ Can also open system folders like Downloads, Documents, Pictures, and more.
+- ✅ Executes browser-based searches or directly opens websites.
+- ✅ Built-in multi-threading support for smooth, non-blocking responses.
+- ✅ Commands to restart, shut down, or put the system to sleep.
+- ✅ Fun, interactive, and useful for daily tasks!
 
 ---
 
@@ -18,107 +21,128 @@ Shifra is a smart voice assistant built using **Flask (Python)** and **Vanilla J
 
 - **Frontend:** HTML, CSS, JavaScript (Web Speech API)
 - **Backend:** Python, Flask, pyttsx3, SpeechRecognition
-- **Others:** OS module, threading for async execution
+- **Others:** OS module, threading for async operations
 
 ---
 
 ## 📂 Project Structure
 
 ```bash
-
-
-project/
+Jarvis/
 │
 ├── templates/
-│   └── index.html       # Frontend page
+│   └── index.html       # Main frontend UI
 ├── static/
-        css
-│   └── script.js        # JavaScript logic
-├── app.py               # Python backend using Flask
+│   └── css/             # Styling
+│   └── script.js        # JavaScript for voice interaction
+├── app.py               # Python backend logic (Flask app)
 └── README.md            # You're here!
 ⚙️ How to Run the App
 🔧 Prerequisites
 Python 3.x
 
-Pip installed
+Pip
 
 Working Microphone
 
-A modern browser (Chrome recommended)
+Modern browser (Chrome recommended)
 
 📦 Required Libraries
-Install all the dependencies:
+Install all required packages using:
 
-
+bash
+Copy
+Edit
 pip install Flask pyttsx3 SpeechRecognition
-(Optional for speech in Windows):
-pip install pyaudio
+Optional (for speech support on Windows):
 
-
-If you face issues installing pyaudio, use:
-
+bash
+Copy
+Edit
 pip install pipwin
 pipwin install pyaudio
-
-
 ▶️ Run the Flask App
+bash
+Copy
+Edit
 python app.py
-It will start running on: http://127.0.0.1:5000/
+Open your browser at http://127.0.0.1:5000/, and click the microphone icon to start speaking to Jarvis!
 
-Open it in your browser and click the mic button to start talking to Shifra!
-
-🎤 Sample Commands You Can Say
+🎤 Sample Voice Commands
 🌐 Web-Based Commands:
 "Open YouTube"
 
 "Open Google"
 
-"What's the time?"
-
-"What's the date?"
+"Search for weather today"
 
 💻 System-Level Commands:
 "Open calculator"
 
 "Open notepad"
 
-"Open chrome"
+"Open Chrome"
 
 "Open file manager"
 
-"Open drive c"
+"Open drive C"
 
-"Open whatsapp"
+"Open drive D"
+
+"Open WhatsApp"
 
 "Open command prompt"
 
+"Open PowerShell"
+
 "Open control panel"
 
-"Shutdown" / "Restart"
+"Open task manager"
 
-📌 Note
-If the browser says “Sorry, I didn’t catch that,” and the assistant doesn't respond, refresh the page (or use auto-refresh feature in the future).
+"Open Microsoft Word"
 
-Voice command processing is split: Basic commands are handled in JavaScript, while system-level commands go to Flask for execution.
+"Open Microsoft Excel"
+
+"Open PowerPoint"
+
+"Open camera"
+
+"Open settings"
+
+"Open photos"
+
+"Open music"
+
+"Shutdown" / "Restart" / "Sleep"
+
+📌 Notes
+If the browser says “Sorry, I didn’t catch that,” try refreshing the page.
+
+Some commands are executed via JavaScript in the browser; others use Flask to run Python code.
+
+The system-level commands require Python and microphone access to work correctly.
 
 🙌 Author
 Satyam Rajput
-🔗 GitHub | 🔗 Portfolio | 📧 Available for collaborations and internships!
+
+🔗 GitHub | 🔗 Portfolio
+📧 Available for collaborations and internships!
+
+
+
+
+
+
+
+
 
 💡 Future Improvements
-Add login/authentication for personal usage.
+Add user login/authentication
 
-Add dark mode and better UI styling.
+Introduce dark mode and improved UI
 
-Use hotword detection like "Hey Shifra".
+Implement hotword detection like “Hey Jarvis”
 
-Add AI-based replies using GPT APIs.
+Add GPT/AI-powered smart responses
 
-Feel free to star 🌟 the repo if you liked it!
-
-yaml
-
-
----
-
-Let me know if you want a Hindi version, logo badge, screenshots section, or a GitHub actions dep
+Create auto-refresh feature for the page
