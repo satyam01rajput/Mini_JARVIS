@@ -1,7 +1,7 @@
 
 # Jarvis - Desktop Voice Assistant (with Web Integration) 🎙️💻
 
-**Jarvis** is a smart desktop voice assistant built using **Flask (Python)** and **Vanilla JavaScript**. It responds to voice commands to open system apps like **Calculator**, **Notepad**, **Chrome**, and also performs web searches or opens websites like **YouTube**, **Google**, and more — all from a sleek browser interface.
+Jarvis is a smart desktop voice assistant built using Flask (Python) and Vanilla JavaScript. It directly interacts with your operating system, allowing you to open any system software or application software with your voice. Whether you want to launch a system utility, open an installed program, or access any website through your browser — Jarvis makes it hands-free and seamless.
 
 ## 🚀 Features
 
